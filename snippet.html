@@ -1,8 +1,8 @@
 <div id='covid-vandy'><!-- chart will be drawn inside this DIV --></div>
 <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 <script>
-    Plotly.d3.csv("https://gist.githubusercontent.com/aadibajpai/b0c11721056325d4892cf926b950cdb1" +
-        "/raw/Weekly%2520New%2520Cases%2520Students.csv", function(err, rows) {
+    Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/master/daily-student-cases.csv",
+        function(err, rows) {
 
         function unpack(rows, key) {
             return rows.map(function (row) {
