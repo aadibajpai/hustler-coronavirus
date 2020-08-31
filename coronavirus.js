@@ -34,33 +34,33 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
             y: unpack(rows, "Graduate and professional students living off campus"),
             type: 'scatter',
             mode: 'lines',
-            name: 'Graduate and professional students living off campus',
+            name: 'Graduate and professional students living off Campus',
             // hovertext: 'Off Campus',
             // hoverinfo: 'y+text',
             hoverlabel: {namelength: -1}
         };
 
         let layout = {
-            title: 'Real-Time COVID-19 Positive Cases Tracker at Vanderbilt',
-            // annotations: [{
-            //     xref: 'paper',
-            //     yref: 'paper',
-            //     x: 0,
-            //     xanchor: 'right',
-            //     y: 1,
-            //     yanchor: 'bottom',
-            //     text: 'Positive Cases',
-            //     showarrow: false
-            // }, {
-            //     xref: 'paper',
-            //     yref: 'paper',
-            //     x: 1,
-            //     xanchor: 'left',
-            //     y: 0,
-            //     yanchor: 'top',
-            //     text: 'Date',
-            //     showarrow: false
-            // }]
+            title: 'Real-Time COVID-19 Tracker at Vanderbilt',
+            annotations: [{
+                xref: 'paper',
+                yref: 'paper',
+                x: 0.03,
+                xanchor: 'right',
+                y: 1,
+                yanchor: 'bottom',
+                text: 'Positive Cases',
+                showarrow: false
+            }, {
+                xref: 'paper',
+                yref: 'paper',
+                x: 1.02,
+                xanchor: 'left',
+                y: 0.1,
+                yanchor: 'top',
+                text: 'Date',
+                showarrow: false
+            }]
         };
 
         let config = {responsive: true}
