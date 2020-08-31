@@ -1,11 +1,12 @@
 Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/master/daily-student-cases.csv",
-    function(err, rows) {
+    function (err, rows) {
 
         function unpack(rows, key) {
             return rows.map(function (row) {
                 return row[key];
             });
         }
+
         let trace1 = {
             x: unpack(rows, 'Category'),
             y: unpack(rows, "Undergraduate students living on campus"),
@@ -14,7 +15,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
             name: 'Undergraduate Students living on Campus',
             // hovertext: 'On Campus',
             // hoverinfo: 'y+text,'
-            hoverlabel: {namelength :-1}
+            hoverlabel: {namelength: -1}
         };
 
         let trace2 = {
@@ -25,7 +26,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
             name: 'Undergraduate Students living off Campus',
             // hovertext: 'Off Campus',
             // hoverinfo: 'y+text',
-            hoverlabel: {namelength :-1}
+            hoverlabel: {namelength: -1}
         };
 
         let trace3 = {
@@ -36,11 +37,11 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
             name: 'Graduate and professional students living off campus',
             // hovertext: 'Off Campus',
             // hoverinfo: 'y+text',
-            hoverlabel: {namelength :-1}
+            hoverlabel: {namelength: -1}
         };
 
         let layout = {
-            title:'Real-Time COVID-19 Positive Cases Tracker at Vanderbilt',
+            title: 'Real-Time COVID-19 Positive Cases Tracker at Vanderbilt',
             // annotations: [{
             //     xref: 'paper',
             //     yref: 'paper',
