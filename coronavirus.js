@@ -12,7 +12,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
             y: unpack(rows, "Undergraduate students living on campus"),
             type: 'scatter',
             mode: 'lines',
-            name: 'Undergraduate Students living on Campus',
+            name: 'Undergrad - On Campus',
             // hovertext: 'On Campus',
             // hoverinfo: 'y+text,'
             hoverlabel: {namelength: -1}
@@ -23,7 +23,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
             y: unpack(rows, "Undergraduate students living off campus"),
             type: 'scatter',
             mode: 'lines',
-            name: 'Undergraduate Students living off Campus',
+            name: 'Undergrad - Off Campus',
             // hovertext: 'Off Campus',
             // hoverinfo: 'y+text',
             hoverlabel: {namelength: -1}
@@ -34,7 +34,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
             y: unpack(rows, "Graduate and professional students living off campus"),
             type: 'scatter',
             mode: 'lines',
-            name: 'Graduate and professional students living off Campus',
+            name: 'Graduate/Professional',
             // hovertext: 'Off Campus',
             // hoverinfo: 'y+text',
             hoverlabel: {namelength: -1}
