@@ -1,6 +1,6 @@
 # hustler-coronavirus
 
-Real-Time COVID-19 tracker for Vanderbilt University created for the Vanderbilt Hustler. 
+COVID-19 tracker for Vanderbilt University created for the Vanderbilt Hustler. 
 
 **Production**: https://vanderbilthustler.com/category/coronavirus/
 
