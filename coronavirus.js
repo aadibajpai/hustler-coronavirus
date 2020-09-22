@@ -41,7 +41,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
         };
 
         let layout = {
-            title: 'Real-Time COVID-19 Tracker at Vanderbilt',
+            title: 'COVID-19 Tracker at Vanderbilt',
             annotations: [{
                 xref: 'paper',
                 yref: 'paper',
