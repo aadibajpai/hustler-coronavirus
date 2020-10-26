@@ -43,7 +43,12 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
         let layout = {
             title: 'COVID-19 Tracker at Vanderbilt',
             showlegend: true,
-            legend: {"orientation": "h"},
+            legend: {
+                "orientation": "h",
+                yref: 'paper',
+                y: -0.2,
+                yanchor: 'top',
+            },
             annotations: [{
                 xref: 'paper',
                 yref: 'paper',
@@ -56,7 +61,7 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
             }, {
                 xref: 'paper',
                 yref: 'paper',
-                x: 1.02,
+                x: 1.01,
                 xanchor: 'left',
                 y: 0.1,
                 yanchor: 'top',
