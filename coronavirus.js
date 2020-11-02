@@ -1,4 +1,4 @@
-Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/master/daily-student-cases.csv",
+Plotly.d3.csv("https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/1QorVReLcwOEsqDEgWhVAlIlU3zJRNwu8m975aQ8MXpE/export?format=csv",
     function (err, rows) {
 
         function unpack(rows, key) {
@@ -8,8 +8,8 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
         }
 
         let trace1 = {
-            x: unpack(rows, 'Category'),
-            y: unpack(rows, "Undergraduate students living on campus"),
+            x: unpack(rows, ''),
+            y: unpack(rows, "Undergrad - On Campus"),
             type: 'scatter',
             mode: 'lines',
             name: 'Undergrad - On Campus',
@@ -19,8 +19,8 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
         };
 
         let trace2 = {
-            x: unpack(rows, 'Category'),
-            y: unpack(rows, "Undergraduate students living off campus"),
+            x: unpack(rows, ''),
+            y: unpack(rows, "Undergrad - Off Campus"),
             type: 'scatter',
             mode: 'lines',
             name: 'Undergrad - Off Campus',
@@ -30,8 +30,8 @@ Plotly.d3.csv("https://raw.githubusercontent.com/aadibajpai/hustler-coronavirus/
         };
 
         let trace3 = {
-            x: unpack(rows, 'Category'),
-            y: unpack(rows, "Graduate and professional students living off campus"),
+            x: unpack(rows, ''),
+            y: unpack(rows, "Graduate/Professional"),
             type: 'scatter',
             mode: 'lines',
             name: 'Graduate/Professional',
