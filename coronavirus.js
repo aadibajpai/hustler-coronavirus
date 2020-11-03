@@ -1,4 +1,4 @@
-Plotly.d3.csv("https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/1QorVReLcwOEsqDEgWhVAlIlU3zJRNwu8m975aQ8MXpE/export?format=csv",
+Plotly.d3.csv("https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/1QorVReLcwOEsqDEgWhVAlIlU3zJRNwu8m975aQ8MXpE/gviz/tq?tqx=out:csv",
     function (err, rows) {
 
         function unpack(rows, key) {
