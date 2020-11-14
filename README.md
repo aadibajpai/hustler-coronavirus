@@ -15,5 +15,5 @@ Put this in your html.
 ```html
 <div id='covid-vandy'><!-- chart will be drawn inside this DIV --></div>
 <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
-<script src="https://cdn.jsdelivr.net/gh/aadibajpai/hustler-coronavirus/coronavirus.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aadibajpai/hustler-coronavirus/coronavirus.min.js"></script>
 ```
