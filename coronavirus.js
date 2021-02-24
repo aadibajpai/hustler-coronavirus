@@ -7,38 +7,57 @@ Plotly.d3.csv("https://cors.aadibajpai.workers.dev/?https://docs.google.com/spre
             });
         }
 
+        onc = unpack(rows, "Undergrad - On Campus Asymptomatic").reverse()
+        offc = unpack(rows, "Undergrad - Off Campus Asymptomatic").reverse()
+        grad = unpack(rows, "Graduate/Professional Asymptomatic").reverse()
+        dates = unpack(rows, '').reverse()
+        // avg = grad.map((val, i) => (Number(val) + Number(onc[i]) + Number(offc[i])) / 3)
+
+        // console.log(avg);
+
         let trace1 = {
-            x: unpack(rows, ''),
-            y: unpack(rows, "Undergrad - On Campus"),
+            x: dates,
+            y: onc,
             type: 'scatter',
             mode: 'lines',
-            name: 'Undergrad - On Campus',
+            name: 'Undergrad - On Campus Asymptomatic',
             // hovertext: 'On Campus',
             // hoverinfo: 'y+text,'
             hoverlabel: {namelength: -1}
         };
 
         let trace2 = {
-            x: unpack(rows, ''),
-            y: unpack(rows, "Undergrad - Off Campus"),
+            x: dates,
+            y: offc,
             type: 'scatter',
             mode: 'lines',
-            name: 'Undergrad - Off Campus',
+            name: 'Undergrad - Off Campus Asymptomatic',
             // hovertext: 'Off Campus',
             // hoverinfo: 'y+text',
             hoverlabel: {namelength: -1}
         };
 
         let trace3 = {
-            x: unpack(rows, ''),
-            y: unpack(rows, "Graduate/Professional"),
+            x: dates,
+            y: grad,
             type: 'scatter',
             mode: 'lines',
-            name: 'Graduate/Professional',
+            name: 'Graduate/Professional Asymptomatic',
             // hovertext: 'Off Campus',
             // hoverinfo: 'y+text',
             hoverlabel: {namelength: -1}
         };
+
+        // let trace4 = {
+        //     x: unpack(rows, ''),
+        //     y: avg,
+        //     type: 'scatter',
+        //     mode: 'lines',
+        //     name: 'Average',
+        //     // hovertext: 'Off Campus',
+        //     // hoverinfo: 'y+text',
+        //     hoverlabel: {namelength: -1}
+        // };
 
         let layout = {
             title: 'COVID-19 Tracker at Vanderbilt',
